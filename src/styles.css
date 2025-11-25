@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+
+/* 引入 Google Fonts: Playfair Display (标题-衬线体) 和 Lato (正文-无衬线体) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* 颜色板 - 基于你的第一张参考图 */
+  --bg-color: #FDF9F3;         /* 整体背景：米白色 */
+  --text-dark: #3E2723;        /* 深棕色文字 */
+  --text-light: #6D4C41;       /* 浅棕色文字 */
+  --accent-color: #D7CCC8;     /* 装饰色：浅褐色 */
+  --shape-color: #E6D0C2;      /* 右上角圆弧背景色 */
+
+  /* 字体 */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* 简单的 CSS Reset for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

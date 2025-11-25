@@ -1,0 +1,25 @@
+.main-nav {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover, .main-nav a.active {
+  color: #3E2723; /* 你的深棕色主题色 */
+  border-bottom: 2px solid #3E2723;
+}

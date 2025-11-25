@@ -1,0 +1,63 @@
+.contact-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.big-title {
+  font-size: 5rem;
+  line-height: 1;
+  font-family: var(--font-body); /* 图三是无衬线字体 */
+  font-weight: 700;
+  color: #000; /* 图三是纯黑 */
+  width: 50%;
+}
+
+.intro-text {
+  width: 40%;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.detail-col h3 {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.detail-col p {
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 500;
+}
+
+.detail-col .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.detail-col a:hover {
+  text-decoration: underline;
+  color: var(--text-light);
+}

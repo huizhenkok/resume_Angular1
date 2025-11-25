@@ -1,0 +1,161 @@
+/* 容器 */
+.resume-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: transparent;
+  position: relative; /* 为了定位装饰背景 */
+  padding: 20px;
+}
+
+/* 右上角装饰形状 (模仿图一的米色块) */
+.decorative-shape {
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  width: 350px;
+  height: 400px;
+  background-color: var(--shape-color);
+  border-bottom-left-radius: 50%;
+  z-index: -1; /* 放在底层 */
+}
+
+/* Header 区域 */
+.header-section {
+  margin-bottom: 50px;
+  width: 60%; /* 为右边的照片留位置 */
+}
+
+.name {
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.role {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.contact-info .info-item {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 照片区域 */
+.photo-container {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 250px;
+  height: 250px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* 圆形 */
+  border: 5px solid #fff; /* 白边 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 主内容网格布局 */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 左右两栏 50% 50% */
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* 左侧边框线 (模仿图一中间的线) */
+.right-column {
+  border-left: 2px solid var(--text-dark);
+  padding-left: 40px;
+  position: relative;
+}
+
+/* 装饰小圆点 (模仿时间轴的圆点) */
+.right-column::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--text-dark);
+  border-radius: 50%;
+}
+
+/* 标题样式 */
+.section-title {
+  font-size: 1.2rem;
+  background-color: var(--shape-color); /* 标题背景色 */
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 时间轴项目 */
+.timeline-item, .experience-item {
+  margin-bottom: 25px;
+}
+
+.year {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.school, .company {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.degree, .desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* 技能条 */
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--text-dark);
+  border-radius: 5px;
+}
+
+/* 简介文字 */
+.profile-summary {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #444;
+}

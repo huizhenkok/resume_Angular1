@@ -1,0 +1,55 @@
+.hobbies-container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.hobbies-title {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  text-align: left; /* 像图二一样靠左 */
+  border-bottom: 4px solid var(--text-dark);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.hobbies-grid {
+  display: flex;
+  justify-content: space-around; /* 均匀分布 */
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  /* 使用我们在全局定义的形状颜色 (米色/粉色调)，而不是图二的亮粉色，以保持统一 */
+  background-color: #EBCBCB; /* 稍微偏粉一点的颜色，致敬图二但保持柔和 */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem; /* Emoji 大小 */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.circle:hover {
+  transform: scale(1.1); /* 鼠标悬停放大 */
+  background-color: var(--text-light);
+}
+
+.hobby-item p {
+  font-weight: bold;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
